@@ -1,0 +1,56 @@
+.fb-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+
+.composer {
+  padding: 12px;
+}
+
+.composer-top {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: #dfe3ee;
+}
+
+.composer-input {
+  flex: 1;
+  text-align: left;
+  background: #f0f2f5;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.composer-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.composer-action {
+  flex: 1;
+  background: transparent;
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.composer-action:hover {
+  background: #f0f2f5;
+}

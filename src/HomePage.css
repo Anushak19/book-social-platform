@@ -1,0 +1,14 @@
+.home-composer {
+  margin: 14px 0 18px;
+}
+
+.home-empty {
+  margin-top: 12px;
+}
+
+/* Feed list spacing (uses your global .feed-list too) */
+.feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

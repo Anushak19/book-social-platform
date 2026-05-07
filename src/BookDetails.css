@@ -1,0 +1,26 @@
+.book-details {
+  background: var(--color-surface);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  max-width: 800px;
+}
+
+.book-details-header {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.book-details-author {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.book-details-summary {
+  line-height: 1.6;
+  font-size: 14px;
+  color: #374151;
+}

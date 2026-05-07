@@ -1,0 +1,191 @@
+/* BookCard.css — matches your current BookCard.jsx exactly */
+
+.book-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Header */
+.book-card .post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-card .post-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.book-card .post-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+
+.book-card .post-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.book-card .post-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text-main);
+}
+
+.book-card .post-time {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+/* menu icon */
+.book-card .icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 0;
+}
+
+.book-card .icon-btn:hover {
+  background: var(--color-primary-soft);
+}
+
+/* Body */
+.book-card .book-body {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.book-card .book-cover {
+  width: 64px;
+  height: 84px;
+  border-radius: 14px;
+  border: 1px solid var(--color-border);
+  background: linear-gradient(180deg, var(--color-primary-soft), #ffffff);
+  flex: 0 0 auto;
+}
+
+.book-card .book-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.book-card .book-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-text-main);
+}
+
+.book-card .book-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.book-card .book-link:hover {
+  text-decoration: underline;
+}
+
+.book-card .book-author {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.book-card .book-summary {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-main);
+  max-height: calc(1.5em * 3); /* 3 lines */
+  overflow: hidden;
+}
+
+/* Divider */
+.book-card .divider {
+  height: 1px;
+  background: var(--color-border);
+}
+
+/* Actions */
+.book-card .actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* make action buttons lighter and consistent */
+.book-card .actions-row .btn {
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* Danger delete */
+.book-card .danger {
+  border-color: #fecaca;
+}
+.book-card .danger:hover {
+  background: #fee2e2;
+}
+
+/* Comment box */
+.book-card .comment-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.book-card .comment-box .input {
+  flex: 1;
+  width: auto; /* override input's width: 100% inside flex */
+}
+
+/* Comments */
+.book-card .comments-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.book-card .comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.book-card .comment-item {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.book-card .comment-user {
+  font-weight: 800;
+  color: var(--color-text-main);
+  font-size: 13px;
+}
+
+.book-card .comment-text {
+  font-size: 13px;
+  color: var(--color-text-main);
+  line-height: 1.4;
+}

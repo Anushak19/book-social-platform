@@ -1,0 +1,95 @@
+.book-ai-box {
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.book-ai-box h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.book-ai-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.book-ai-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  resize: vertical;
+  outline: none;
+}
+
+.book-ai-textarea:focus {
+  border-color: #888;
+}
+
+.book-ai-button {
+  align-self: flex-start;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #1f1f1f;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.book-ai-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.book-ai-error {
+  margin-top: 14px;
+  color: #c62828;
+  font-weight: 500;
+}
+
+.book-ai-result {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 14px;
+  background: #f7f7f7;
+}
+
+.book-ai-result h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.book-ai-answer {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.book-ai-answer-icon {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.book-ai-sources {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.book-ai-sources li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.book-ai-source-icon {
+  margin-right: 8px;
+}

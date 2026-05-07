@@ -1,0 +1,147 @@
+:root {
+  --color-bg: #F9FAFB;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+
+  --color-primary: #6366f1;
+  --color-primary-hover: #4f46e5;
+  --color-primary-soft: #eef2ff;
+
+  --color-text-main: #1f2937;
+  --color-text-muted: #6b7280;
+
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08);
+  --shadow-soft: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+/* Reset-ish */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* App layout */
+.app-root {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.app-body {
+  display: flex;
+}
+
+.app-main {
+  flex: 1;
+  padding: 20px 0;
+}
+
+/* Generic page layout */
+.page {
+  margin-top: 20px;
+}
+
+/* Centered container for all pages */
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px 40px;
+}
+
+/* Page header (title + subtitle) */
+.page-header {
+  margin-bottom: 8px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.page-subtitle {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+/* List of cards on a page (Home / Profile) */
+.feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ---------- UI Primitives (real-app feel) ---------- */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-main);
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover { filter: brightness(0.98); }
+
+.btn-primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+}
+.btn-primary:hover { background: var(--color-primary-hover); }
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  background: white;
+  outline: none;
+}
+.input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+}
+
+.muted { color: var(--color-text-muted); }
+
+@media (max-width: 720px) {
+  .page-container { padding: 0 16px 28px; }
+}
+
+/* utilities used by BookCard */
+.card-pad { padding: 16px; }
+
+.text-sm {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+/* optional: a ghost button style */
+.btn-ghost {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+.btn-ghost:hover {
+  background: var(--color-primary-soft);
+  border-color: var(--color-primary-soft);
+}
+.h2 { font-size: 18px; font-weight: 800; margin: 0; color: var(--color-text-main); }
+
+
+

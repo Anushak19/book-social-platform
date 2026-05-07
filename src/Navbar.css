@@ -1,0 +1,133 @@
+/* Navbar shell */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  height: 64px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* inner container for consistent page width */
+.navbar-inner {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* left: logo + app name */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 170px;
+}
+
+.navbar-logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+
+.navbar-title {
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--color-text-main);
+  letter-spacing: 0.2px;
+}
+
+/* center: search */
+.navbar-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* right: user + action */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+  min-width: 220px;
+}
+
+.navbar-user {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+/* Make buttons reuse your primitives */
+.navbar .navbar-upload-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 38px;
+  padding: 0 12px;
+  border-radius: 12px;
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+  .navbar-inner {
+    padding: 0 16px;
+  }
+  .navbar-user {
+    display: none;
+  }
+  .navbar-left {
+    min-width: auto;
+  }
+  .navbar-right {
+    min-width: auto;
+  }
+}
+
+.navbar-links {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text-muted);
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.navbar-link:hover {
+  background: var(--color-primary-soft);
+  color: var(--color-text-main);
+}
+
+.navbar-link-active {
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+

@@ -1,0 +1,75 @@
+.add-book-page {
+  max-width: 800px;
+  margin-top: 10px;
+}
+
+/* Card container */
+.add-book-form {
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  display: flex;              /* ✅ vertical layout */
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Each field block */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Label text */
+.field-label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.optional {
+  font-weight: 400;
+  font-size: 13px;
+  color: #888;
+}
+
+/* Inputs / textarea */
+.add-book-form input,
+.add-book-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.add-book-form input:focus,
+.add-book-form textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+}
+
+.helper-text {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Button */
+.primary-btn {
+  margin-top: 8px;
+  width: 100%;
+  padding: 12px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  opacity: 0.95;
+}
